@@ -1,8 +1,9 @@
-let userName = "Orlah";
-console.log(userName);
+let userName: string = "Orlah";
+let age: number = 18;
+let isBrilliant: boolean = !false;
+let postID: number | string = "110100"; // Union datatype
+let aboutMe: any = "🤷‍♀️";
 
-let a = 12;
-let b = "6";
-let c = 5;
-console.log(a, b, c);
-console.log(a * c);
+const sum = (a: number, b: number) => {
+  return a + b;
+};

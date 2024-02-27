@@ -1,8 +1,9 @@
 "use strict";
 let userName = "Orlah";
-console.log(userName);
-let a = 12;
-let b = "6";
-let c = 5;
-console.log(a, b, c);
-console.log(a * c);
+let age = 18;
+let isBrilliant = !false;
+let postID = "110100"; // Union datatype
+let aboutMe = "🤷‍♀️";
+const sum = (a, b) => {
+    return a + b;
+};
