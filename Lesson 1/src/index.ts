@@ -27,17 +27,17 @@ let myObj: object = {
 };
 console.log(myObj);
 
-type Guitarist = {
-  name: string;
-  active: boolean;
-  albums: (string | number)[];
-};
+// type Guitarist = {
+//   name: string;
+//   active: boolean;
+//   albums: (string | number)[];
+// };
 
-let evh: Guitarist = {
-  name: "Orlah",
-  active: true,
-  albums: [1934, 3432, "The Glory Experience"],
-};
+// let evh: Guitarist = {
+//   name: "Orlah",
+//   active: true,
+//   albums: [1934, 3432, "The Glory Experience"],
+// };
 
 // Interface
 interface Person {
@@ -69,3 +69,19 @@ enum Grade {
   A,
 } // element @ first postion = 0
 console.log(Grade.F);
+
+// Type Alliases
+type stringOrNumber = string | number;
+
+type stringOrNumberArray = (string | number)[];
+
+type Guitarist = {
+  name?: string;
+  active: boolean;
+  album: stringOrNumberArray;
+};
+
+// Literal types
+let namee: "Dave";
+let unionName: "Orlah" | "Divine" | "Tomiwa" | "IB";
+unionName = "IB";
